@@ -1,0 +1,123 @@
+.flex{
+		display: flex;
+		flex-direction: row;
+	}
+	.sec1,.sec2{
+		width: 50%;
+		padding: 2%;
+		margin: 3%;
+		border:3px solid #03BB24;
+		box-shadow: 3px 5px 5px 3px #03BB24;
+	}
+	.bgimg{
+			background-image:url(https://assets.hongkiat.com/uploads/40-cool-abstract-and-background-photoshop-tutorials/yellow-green-abstract.jpg);
+		background-size: cover;
+		background-position: center;
+		font-size: 18px;
+		}
+	.footer{
+		width: 99.8%;
+		background-color:#03BB24;
+		padding: 1px;
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+	}
+	span{
+		color: #379114;
+		font-size: 22px;
+	}
+	button{
+		margin: 1px;
+		font-size: 16px;
+		background-color: #03BB24;
+	}
+	button:hover{
+		background-color: #F7FE07;	
+		cursor: pointer;
+	}
+	@media only screen and (min-width: 320px) and (max-width: 767px){
+		.flex{
+			flex-direction: column;
+		}
+		.sec1,.sec2{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			border:3px solid #03BB24;
+			box-shadow: 2px 3px #03BB24;
+		}
+		.sec2{
+			margin-top: 10px;
+		}
+		.bgimg{
+			background-image:url(https://assets.hongkiat.com/uploads/40-cool-abstract-and-background-photoshop-tutorials/yellow-green-abstract.jpg);
+			background-size: cover;
+			background-position: center;
+			font-size: 16px;
+		}
+		.footer{
+			width: 100%;
+			background-color:#03BB24;
+			font-size: 17px;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 3%;
+			padding: 2px;
+			margin: 0px;
+		}
+		span{
+			color: #379114;
+			font-size: 20px;
+		}
+		button{
+			margin: 1px;
+			font-size: 16px;
+			background-color: #03BB24;
+		}
+		button:hover{
+			background-color: #F7FE07;	
+			cursor: pointer;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1023px){
+		.flex{
+			flex-direction: row;
+		}
+		.sec1,.sec2{
+			width: 50%;
+			padding: 2%;
+			margin: 3%;
+			border:3px solid #03BB24;
+			box-shadow: 3px 5px 5px 3px #03BB24;
+		}
+		.bgimg{
+			background-image:url(https://assets.hongkiat.com/uploads/40-cool-abstract-and-background-photoshop-tutorials/yellow-green-abstract.jpg);
+			background-size: cover;
+			background-position: center;
+			font-size: 16px;
+		}
+		.footer{
+			width: 100%;
+			background-color:#03BB24;
+			font-size: 17px;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 3%;
+			padding: 2px;
+			margin: 0px;
+		}
+		span{
+			color: #379114;
+			font-size: 20px;
+		}
+		button{
+			margin: 1px;
+			font-size: 16px;
+			background-color: #03BB24;
+		}
+		button:hover{
+			background-color: #F7FE07;	
+			cursor: pointer;
+		}
+	}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array methods</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\Amulya\OneDrive\Documents\HTML\js-s9-2-task.css">
+</head>
+	
+<body class="bgimg">
+	<b><h2 style="color: #379114"><center>ARRAY METHODS</center></h2></b>
+	<div class="flex">
+
+		<div class="sec1">
+			<center><i><b><span>Sort()</span></b></i>
+			<p>This method is used to sort an array alphabetically and numerically.<br>By default it sort an array alphabetically.<br>First,it sorts the elements Which has capital letters at beginning.<br>After that small letters are sorted.if the elements have same first letter,then it will check for second letter and sort the elements<br><b>Example:</b>
+			<p>My array is:</p>
+			<p id="demo"></p>
+			<button onclick="sort()">Sort elements</button>
+			<b><p id="demo1"></p></b>
+			<script type="text/javascript">
+				var a=["Apple","mango","banana","Papaya"];
+				document.getElementById('demo').innerHTML=a;
+				function sort(){
+					document.getElementById('demo1').innerHTML=a.sort();
+				}
+			</script>
+			<hr>
+			<i><b><span>Reverse()</span></b></i>
+			<p>This method is used to Reverse the elements in an array.This will return the elements in reverse order.<br>It doesn't check whether the elements are capital or not.it just reverse the elements.<br><b>Example:</b></p>
+			<p>My array is:</p>
+			<p id="demo2"></p>
+			<button onclick="rev()">Reverse elements</button>
+			<b><p id="demo3"></p></b>
+			<script type="text/javascript">
+				var b=["Apple","mango","banana","Papaya"];
+				document.getElementById('demo2').innerHTML=b;
+				function rev(){
+					document.getElementById('demo3').innerHTML=b.reverse();
+				}
+			</script>
+			</center>
+			</div>
+		<div class="sec2">
+			<center><i><b><span>Random Sort()</span></b></i>
+				<p style="font-size: 20px;padding-top: 75px">This method is used to sort the array in random order.To sort the array in random,we have to use the function random_name(a,b) to get the return value which is in the range [-0.5,0.5].
+				it returns 0.5-Math.random() because this function return 0.5 - Math.random() and Math.random() will return the float value which is in range of [0,1]. it means that the sort order will be increase or decrease So that we get the result in random.<br><b>Example:</b></p>
+				<p>My array is:</p>
+			<p id="demo4"></p>
+			<button onclick="random()">Random sort</button>
+			<b><p id="demo5"></p></b>
+			<script type="text/javascript">
+				var c=[2,15,45,15,
+				7,48,56,24,85,62,84,96,100];
+				document.getElementById('demo4').innerHTML=c;
+				function random(){
+					c.sort(function(x,y){
+						return 0.5-Math.random();
+					});
+					document.getElementById('demo5').innerHTML=c;
+				}
+			</script>
+		</div>
+	</div>
+	<footer class="footer">
+	<div class="footer">
+		<p>A.Amulya-MITS1920WC09-25/09/2020</p>
+	</div>
+</footer>
+
+</body>
+</html>
